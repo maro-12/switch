@@ -8,6 +8,19 @@ body{
 	height: 768px;
 }
 
+div#logo > img{
+	width: 100px;
+	height: 50px;
+	position: relative;
+	float: left;
+	left: 50px;
+}
+
+div.navbar-header > a{
+	font-size: 26px;
+	padding-top: 17px;
+}
+
 .text{
 	/*display: inline;*/
 	/*position: relative;*/
@@ -15,7 +28,7 @@ body{
 }
 
 .navbar-header{
-	padding-left: 100px;
+	padding-left: 115px;
 }
 
 .navbar-right{
