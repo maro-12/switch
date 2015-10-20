@@ -1,99 +1,231 @@
-body{
-	position: relative;
-	/*overflow: hidden;*/
-	/*visibility: hidden;*/
+canvas{
+  position: fixed;
+  z-index: 0;
+  top: 0px;
+}
+
+aside#sidebar{
+  background-color: #3e3d46;
+  z-index: 22;
+  /*box-shadow: -5px 0px 4px 0px #353232 inset;*/
+}
+aside#sidebar .fixElement{
+  position: fixed;
+  opacity: 0;
+}
+aside#sidebar .logo{
+  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.2);
+  padding: 40px;
+  text-align: center;
+}
+aside#sidebar ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+aside#sidebar ul li{
+  position: relative;
+  border-bottom: 1px solid #666666;
+  border-top: 1px solid #222222;
+  cursor: pointer;
+  text-align: center;
+}
+
+aside#sidebar ul li a{
+  color: white;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  padding: 16px 0px;
+  display: inline-block;
+  width: 100%;
+}
+
+aside#sidebar ul li > a:hover:after {
+  width: 4px;
+  background-color: #39ad2f;
+}
+aside#sidebar ul li > a:after {
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 100%;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+ }
+
+.shadow{
+  box-shadow: -5px 0px 1px 0px #353232, 1px 2px 9px -1px #353232;
+}
+
+section#top{
+  background-color: #555;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+section{
+  z-index: 1;
+}
+
+section h1.title{
+  font-size: 53px;
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+section article{
+  color: #555;
+  padding: 32px;
+}
+section article .subheader{
+  font-size: 24px;
+}
+section article .description{
+  color: #777;
+}
+section#top:after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(46, 46, 72, 0.6);
+}
+
+section#top h1.title{
+  position: absolute;
+  z-index: 10;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-size: 128px;
+  text-shadow: 0px 0px 10px white;
+  padding: 0px 16px;
+  display: inline-block;
+  margin: 0;
+  top: 10%;
+  left: 5%;
+}
+
+section#top h2.theme{
+  margin: 0;
+  position: absolute;
+  right: 20px;
+  bottom: 10%;
+  color: white;
+  z-index: 20;
+}
+
+
+section#purpose{
+  position: relative;
+  margin-top: 40px;
+}
+html, body{
+  font-family: 'Noto Sans Japanese';
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(22, 92, 198, 0.86);
 }
 
 #header{
-	height: 768px;
+  height: 768px;
 }
 
 div#logo > img{
-	width: 100px;
-	height: 50px;
-	position: relative;
-	float: left;
-	left: 22px;
-	margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  float: left;
+  left: 22px;
+  margin-top: 10px;
 }
 
 div.navbar-header > a{
-	font-size: 26px;
-	padding-top: 17px;
-	margin-top: 10px;
+  font-size: 26px;
+  padding-top: 17px;
+  margin-top: 10px;
 }
 
 .text{
-	/*display: inline;*/
-	/*position: relative;*/
-	margin-top: 100px;
+  /*display: inline;*/
+  /*position: relative;*/
+  margin-top: 100px;
 }
 
 nav#nav{
-	min-height: 65px;
+  min-height: 65px;
 }
 
 .navbar-header{
-	padding-left: 77px;
+  padding-left: 77px;
 }
 
 .navbar-right{
-	padding-right: 100px;
-}	
+  padding-right: 100px;
+}
 
 div#nav-content{
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 #contents{
-	/*background-color: red;*/
-	/*padding-top:0;*/
-	/*position: absolute;*/
-	text-align: center;
-	padding-top: 50px;
+  /*background-color: red;*/
+  /*padding-top:0;*/
+  /*position: absolute;*/
+  text-align: center;
+  padding-top: 50px;
 }
 
 img#logo{
-	height: 50px;
+  height: 50px;
 }
 
 h1#link{
-	padding-top: 50px;
-	padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 video#bgvideo{
-		position: relative; right: 0; bottom: 0;
-		width : 100%; height : 100%;
-		opacity: 0.95;
-		z-index: 1;
-	}
+    position: relative; right: 0; bottom: 0;
+    width : 100%; height : 100%;
+    opacity: 0.95;
+    z-index: 1;
+  }
 
 div.overlay{
-	color: white;
-	position: relative; top: -550px; /*left: 500px;*/
-	text-align: center;
-	z-index: 2;
+  color: white;
+  position: relative; top: -550px; /*left: 500px;*/
+  text-align: center;
+  z-index: 2;
 }
 
 div#contents{
-	background-color: #EEEEEE;
+  background-color: #EEEEEE;
 }
 
 hr#last-bar{
-	margin: 0;
+  margin: 0;
 }
 
 footer{
-	text-align: center;
-	vertical-align: middle;
-	background-color : #a9a9a9;
-	color : white;
-	height :50px;
-	padding-top: 0;
-	padding-bottom : 0;
-	}
+  text-align: center;
+  vertical-align: middle;
+  background-color : #a9a9a9;
+  color : white;
+  height :50px;
+  padding-top: 0;
+  padding-bottom : 0;
+  }
 
 footer#footer p{
-	padding-top: 15px;
+  padding-top: 15px;
 }

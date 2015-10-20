@@ -1,0 +1,224 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.cloud {
+  bottom: -3%;
+  position: absolute;
+  z-index: 0;
+}
+.cloud.cloud--type01 {
+  animation: cloud--type01 300s linear infinite;
+  -o-animation: cloud--type01 300s linear infinite;
+  -ms-animation: cloud--type01 300s linear infinite;
+  -moz-animation: cloud--type01 300s linear infinite;
+  -webkit-animation: cloud--type01 300s linear infinite;
+}
+.cloud.cloud--type02 {
+  animation: cloud--type02 240s linear infinite;
+  -o-animation: cloud--type02 240s linear infinite;
+  -ms-animation: cloud--type02 240s linear infinite;
+  -moz-animation: cloud--type02 240s linear infinite;
+  -webkit-animation: cloud--type02 240s linear infinite;
+}
+@-moz-keyframes cloud--type01 {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: -110%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@-webkit-keyframes cloud--type01 {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: -110%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@-o-keyframes cloud--type01 {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: -110%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes cloud--type01 {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: -110%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@-moz-keyframes cloud--type02 {
+  0% {
+    left: -120%;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: -120%;
+  }
+}
+@-webkit-keyframes cloud--type02 {
+  0% {
+    left: -120%;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: -120%;
+  }
+}
+@-o-keyframes cloud--type02 {
+  0% {
+    left: -120%;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: -120%;
+  }
+}
+@keyframes cloud--type02 {
+  0% {
+    left: -120%;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: -120%;
+  }
+}
+
+
+
+#mileStone{
+  background-image: url("http://img-cdn.jg.jugem.jp/71d/2831957/20130416_1125020.jpg");
+  background-size: cover;
+  background-color: white;
+  height: 400px;
+  position: relative;
+}
+
+#mileStone #mile{
+  position: absolute;
+  border-top: solid 1px #aaa;
+  width: 100%;
+  top: 20px;
+  left: 0px;
+  right: 0px;
+}
+
+#mileStone #weed{
+  background-image: url("../images/weed.png");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  opacity: 0.8;
+}
+
+#mileStone ul#schedule{
+  margin: 0;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  top: 45px;
+  white-space: nowrap;
+  padding: 0px 40px;
+}
+
+#mileStone ul#schedule li{
+  display: inline-block;
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 6px;
+  position: relative;
+}
+#mileStone ul#schedule li:last-child{
+  margin-right: 40px;
+}
+#mileStone ul#schedule li a{
+  text-decoration: none;
+  color: yellow;
+}
+#mileStone ul#schedule li a:hover{
+  color: orange;
+}
+#mileStone ul#schedule li.month{
+  color: white;
+  background-color: #8BC34A;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
+}
+#mileStone ul#schedule li.day{
+  opacity: 0;
+}
+
+#mileStone ul#schedule li.day.active{
+  opacity: 0.85;
+  background-color: #45B98E;
+  border-radius: 50%;
+  color: white;
+}
+
+#mileStone ul#schedule li.day .event, #mileStone ul#schedule li.day .task{
+    position: absolute;
+    top: 48px;
+    background-color: #EA4D68;
+    height: auto;
+    white-space: normal;
+    left: 0px;
+    width: 30px;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 10px 0px;
+}
+ #mileStone ul#schedule li.day .task{
+  background-color: #EA714D;
+}
+#mileStone ul#schedule li.day .event:before, #mileStone ul#schedule li.day .task:before{
+    display: block;
+    content: "";
+    position: absolute;
+    border-bottom: solid 12px #EA4D68;
+    top: -12px;
+    height: 0px;
+    width: 0px;
+    border-right: solid 8px transparent;
+    border-left: solid 8px transparent;
+    left: 7px;
+}
+#mileStone ul#schedule li.day .task:before{
+  border-bottom: solid 12px #EA714D;
