@@ -13,12 +13,14 @@ div#logo > img{
 	height: 50px;
 	position: relative;
 	float: left;
-	left: 50px;
+	left: 22px;
+	margin-top: 10px;
 }
 
 div.navbar-header > a{
 	font-size: 26px;
 	padding-top: 17px;
+	margin-top: 10px;
 }
 
 .text{
@@ -27,14 +29,21 @@ div.navbar-header > a{
 	margin-top: 100px;
 }
 
+nav#nav{
+	min-height: 65px;
+}
+
 .navbar-header{
-	padding-left: 115px;
+	padding-left: 77px;
 }
 
 .navbar-right{
 	padding-right: 100px;
 }	
 
+div#nav-content{
+	margin-top: 10px;
+}
 
 #contents{
 	/*background-color: red;*/
