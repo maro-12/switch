@@ -43,6 +43,10 @@ aside#sidebar ul li a{
   width: 100%;
 }
 
+aside#sidebar ul li a .fa{
+  padding-right: 10px;
+}
+
 aside#sidebar ul li > a:hover:after {
   width: 4px;
   background-color: #39ad2f;
