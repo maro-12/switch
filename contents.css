@@ -7,7 +7,7 @@ canvas{
 aside#sidebar{
   background-color: #3e3d46;
   z-index: 22;
-  /*box-shadow: -5px 0px 4px 0px #353232 inset;*/
+  box-shadow: -5px 0px 4px 0px #353232 inset;
 }
 aside#sidebar .fixElement{
   position: fixed;
@@ -67,6 +67,7 @@ section#top{
   width: 100%;
   display: block;
   position: relative;
+  z-index: 99;
 }
 section{
   z-index: 1;
@@ -77,14 +78,25 @@ section h1.title{
   color: white;
   display: block;
   text-align: center;
+  padding: 32px;
+  margin: 0px;
 }
 
+section#purpose h1.title{
+    background-color: rgba(255, 0, 0, 0.67);
+}
 section article{
   color: #555;
   padding: 32px;
 }
 section article .subheader{
-  font-size: 24px;
+  font-size: 20px;
+}
+section article .subheader .fa{
+  font-size: 18px;
+  vertical-align: top;
+  display: inline-block;
+  margin: 4px;
 }
 section article .description{
   color: #777;
@@ -126,8 +138,8 @@ section#top h2.theme{
 
 section#purpose{
   position: relative;
-  margin-top: 40px;
 }
+
 html, body{
   font-family: 'Noto Sans Japanese';
   position: relative;
@@ -136,6 +148,8 @@ html, body{
   background-color: rgba(22, 92, 198, 0.86);
 }
 
+
+/*==================================*/
 #header{
   height: 768px;
 }
