@@ -18,6 +18,7 @@ aside#sidebar .logo{
   background-color: rgba(0,0,0,0.2);
   padding: 40px;
   text-align: center;
+  color: white;
 }
 aside#sidebar ul{
   list-style: none;
@@ -82,9 +83,10 @@ section h1.title{
   margin: 0px;
 }
 
-section#purpose h1.title{
+section#Purpose h1.title{
     background-color: rgba(255, 0, 0, 0.67);
 }
+
 section article{
   color: #555;
   padding: 32px;
@@ -144,7 +146,7 @@ section#top h2.theme{
 }
 
 
-section#purpose{
+section#Purpose{
   position: relative;
 }
 
