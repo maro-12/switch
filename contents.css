@@ -4,6 +4,10 @@ canvas{
   top: 0px;
 }
 
+.frame{
+  z-index: 40;
+  position: relative;
+}
 aside#sidebar{
   background-color: #3e3d46;
   z-index: 22;
@@ -78,6 +82,67 @@ section#top{
   section#top{
     display: none;
   }
+  section#arrow{
+    display: none;
+  }
+}
+
+section#arrow{
+  background-color: rgb(50,49,56);
+  z-index: 98;
+  position: relative;
+  max-height: 160px;
+}
+
+section#arrow a{
+  color: #555;
+}
+
+section #arrow i{
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  text-align: center;
+  text-shadow: 1px 1px 3px #222;
+}
+section#info{
+  background-color: rgb(50,49,56);
+  min-height: 150px;
+  max-height: 250px;
+  display: block;
+  z-index: 98;
+  position: relative;
+  color: #555;
+  padding-top: 16px;
+  box-sizing: border-box;
+}
+section#info .info-icon{
+  display: inline-block;
+  width: 120px;
+  padding-left: 64px;
+}
+section#info .info-icon i{
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+  font-size: 50px;
+  border: double 10px #555;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+section#info ul {
+  color: orange;
+  overflow: scroll;
+  margin-left: 16px;
+  max-height: 100px;
+}
+
+section#info ul li{
+  color: #777;
+  text-shadow: 1px 1px 1px black;
 }
 section{
   z-index: 1;
@@ -94,6 +159,12 @@ section h1.title{
 
 section#Purpose h1.title{
     background-color: rgba(255, 0, 0, 0.67);
+}
+section#Detail h1.title{
+    background-color: rgba(45, 195, 45, 0.67);
+}
+section#Member h1.title{
+    background-color: rgba(255, 88, 9, 0.85);
 }
 
 section article{
@@ -118,9 +189,26 @@ section article .subheader .fa{
   margin: 4px;
 }
 
-section article .subheader .fa-mars{
+section article .subheader .fa-angle-right{
   padding-top: 3px;
   margin-right: 10px;
+  font-weight: bold;
+}
+
+section#Member article .subheader:nth-child(1) .fa{
+  color: #880E4F;
+}
+section#Member article .subheader:nth-child(2) .fa{
+  color: #4A148C;
+}
+section#Member article .subheader:nth-child(3) .fa{
+  color: #311B92;
+}
+section#Member article .subheader:nth-child(4) .fa{
+  color: #0D47A1;
+}
+section#Member article .subheader:nth-child(5) .fa{
+  color: #E65100;
 }
 
 section article .description{
@@ -164,11 +252,6 @@ section#top h2.theme{
   bottom: 10%;
   color: white;
   z-index: 20;
-}
-
-
-section#Purpose{
-  position: relative;
 }
 
 html, body{
