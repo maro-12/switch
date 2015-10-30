@@ -15,7 +15,7 @@
 
   <body>
     <div class="row">
-      <aside id="sidebar" class="flex-md-3 hidden-xs">
+      <aside id="sidebar" class="flex-md-4 hidden-xs">
         <div id="fix" class="fixElement">
           <div class="logo">
             Project Team 06
@@ -29,34 +29,48 @@
           </ul>
         </div>
       </aside>
-      <section id="content" class="flex-md-17 flex-xs-20">
+      <section id="content" class="flex-md-16 flex-xs-20">
         <section id="top" class="z2">
           <h1 class="title">
             Switch
           </h1>
           <h2 class="theme">
-            Webサーバーを利用してIR機器を一元管理する
+            Webサーバーを利用したIR機器の一元管理
           </h2>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ck_ZJshEdIk?autoplay=1&loop=1&controls=0&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ck_ZJshEdIk?loop=1&autoplay=1&controls=0&showinfo=0&rel=0&playlist=ck_ZJshEdIk" frameborder="0" allowfullscreen></iframe>
         </section>
-        <!-- <section id="project" class="frame z2">
-          project 6
-        </section> -->
+        <section id="info" class="frame z2">
+          これはインフォーメーション
+        </section>
         <section id="Purpose">
           <h1 class="title">Purpose</h1>
           <article class="frame z2">
-            <div class="subheader">
-              <div class="fa fa-quote-left"></div>昔の人と今の人<div class="fa fa-quote-right"></div>
+            <div class="row">
+              <div class="flex flex-lg-14 flex-md-order-1">
+                <div class="subheader">
+                  <div class="fa fa-quote-left"></div>Webサーバーを利用したIR機器の一元管理<div class="fa fa-quote-right"></div>
+                </div>
+                <div class="description">
+                  プロジェクト6のメンバーは、一人暮らしの人たちが過半数を占めています。<br>
+                </div>
+              </div>
+              <div class="flex flex-lg-6 flex-md-order-2">
+                <img class="mock" src="./assets/images/mock2.png">
+              </div>
             </div>
-            <div class="description">
-              僕たちが当たり前のように触っているPCやスマホといった電子機器の出現は、世の中に新しい文化を生み出しました。友達と交流したい、わからないことを調べたい、そんな時は携帯でワンタップ、browserアプリやSNSアプリを立ち上げるだけで要望を叶えることができる世界になっています。昔の人が現世にタイムスリップしたら、大変驚くことでしょう。自分たちが思い描いていた想像が、現実のものになっているのですから。
-            </div>
-            <div class="subheader">
-              <div class="fa fa-quote-left"></div>タイムスリップしたその先には<div class="fa fa-quote-right"></div>
-            </div>
-            <div class="description">
-              次は、僕たちがタイムトラベラーになったとしましょう。飛んだ先の未来は、どのようになっていますか？
-              きっと、自動運転の車が行き交い、奇天烈な格好をした人々が行き交っていることでしょう。
+            <div class="row">
+              <div class="flex flex-lg-6 flex-lg-order-1 flex-xs-order-2">
+                <img class="mock" src="./assets/images/mock1.png">
+              </div>
+              <div class="flex flex-lg-14 flex-lg-order-2 flex-xs-order-1">
+                <div class="subheader">
+                  <div class="fa fa-quote-left"></div>タイムスリップしたその先には<div class="fa fa-quote-right"></div>
+                </div>
+                <div class="description">
+                  次は、僕たちがタイムトラベラーになったとしましょう。飛んだ先の未来は、どのようになっていますか？
+                  きっと、自動運転の車が行き交い、奇天烈な格好をした人々が行き交っていることでしょう。
+                </div>
+              </div>
             </div>
           </article>
         </section>
@@ -248,10 +262,10 @@
   <script src="./assets/js/app.js"></script>
   <script src="./myStyle.js"></script>
   <script>
-    $(document).ready(function(){
+    $(function(){
       $(window).on("resize load", function(){
         $windowHeight = $(document).height();
-        $("html").css({height: $windowHeight});
+        $("body").css({height: $windowHeight});
         $("#sidebar").css({height: $windowHeight});
         $("#content").css({height: $windowHeight});
         $fixWidth = $("#sidebar").width();

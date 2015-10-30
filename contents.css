@@ -74,6 +74,11 @@ section#top{
   position: relative;
   z-index: 99;
 }
+@media (max-width: 767px){
+  section#top{
+    display: none;
+  }
+}
 section{
   z-index: 1;
 }
@@ -94,6 +99,12 @@ section#Purpose h1.title{
 section article{
   color: #555;
   padding: 32px;
+}
+
+section article img{
+  margin: 20px auto;
+  display: block;
+  height: 400px;
 }
 section article .subheader{
   font-size: 20px;
